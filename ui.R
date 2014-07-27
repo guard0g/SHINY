@@ -22,7 +22,12 @@ shinyUI(fluidPage(
 
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("moneyPlot")
+      plotOutput("moneyPlot"),
+      p("A Simple Calculator that illustrates the difference of Time Value of Money between Simple and Compound Interest."), 
+      p("Specifically:"),
+      p("Enter the annual interest Rate in percent"),
+      p("Use a slidebar to set the number of months"),
+      p("See the difference between simple interest and compound interest over time in the plot")
      )
   )
 ))
